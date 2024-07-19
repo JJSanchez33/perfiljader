@@ -1,0 +1,127 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before *, *::after{
+    box-sizing: inherit;
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+    --colornegro:hsl(0, 0%, 0%);
+    --funete-principal:"Inter";
+}
+body{
+   
+    font-size: 16px;
+    background-color: var(--Grey900);
+    color: var(--White);
+ }
+ h3,p{
+    font-size: 1.4rem;
+}
+
+/*secction header*/
+.contenedor__principal{
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70rem;
+}
+
+.contenedor{
+    background-color: var(--Grey800);
+    width: 40rem;
+    max-width: 30%;
+    border-radius: 1rem;
+}
+
+.contenedor__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__img{
+    max-width: 20%;
+    border-radius: 50%;
+    margin-top: 5rem;
+}
+
+.header__titulo{
+    margin: 1rem 0 1rem  0;
+}
+
+.header__parrafo{
+    margin: 0 0 1rem 0;
+    color: var(--Green);
+}
+
+/*seccion main*/
+.main{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__section{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contenedor__btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     width: 100%;
+     margin-bottom: 2rem;
+}
+
+.btn__input{
+   margin: .6rem;
+   width: 80%;
+   padding: 1rem;
+   background-color: var(--Grey700);
+   border: none;
+   border-radius: 1rem;
+   color: var(--White);
+   text-decoration: none;
+   text-align: center;
+ 
+}
+
+@media (min-width:375px ) {
+    .contenedor{
+      max-width: 90%;
+      
+    }
+    .btn__input:hover{
+        background-color: var(--Green);
+        cursor: pointer;
+        color: var(--colornegro);
+        font-weight: 800;
+    }
+  
+    
+}
+
+/*secction footer*/
+.attribution { 
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+     text-align: center; }
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
