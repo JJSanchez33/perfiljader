@@ -37,9 +37,10 @@ body{
 
 .contenedor{
     background-color: var(--Grey800);
-    width: 25rem;
+    width: 30rem;
     max-width: 30%;
     border-radius: 1rem;
+   
 }
 
 .contenedor__header{
